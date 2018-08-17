@@ -1,0 +1,8 @@
+name: Puffix
+author: Vilsol
+main: com.beefbytes.puffix.Puffix
+version: 1.0.0
+softdepend: [PlaceholderAPI]
+commands:
+  puffix:
+    usage: /puffix

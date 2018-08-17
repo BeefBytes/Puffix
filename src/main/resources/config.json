@@ -1,0 +1,26 @@
+{
+  "prefix": [
+    {
+      "string": "&3[Dev] &f",
+      "permission": "puffix.dev",
+      "priority": 5
+    },
+    {
+      "string": "&5[Owner] &f",
+      "permission": "puffix.owner",
+      "priority": 10
+    }
+  ],
+  "suffix": [
+    {
+      "string": "&3[Boob] &f",
+      "permission": "puffix.dev",
+      "priority": 5
+    },
+    {
+      "string": "&5[Poop] &f",
+      "permission": "puffix.owner",
+      "priority": 10
+    }
+  ]
+}
