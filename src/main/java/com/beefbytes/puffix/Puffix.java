@@ -1,5 +1,6 @@
 package com.beefbytes.puffix;
 
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -24,7 +25,7 @@ public class Puffix extends JavaPlugin {
     @Override
     public void onEnable(){
         if(Bukkit.getPluginManager().isPluginEnabled("PlaceholderAPI")){
-            new PuffixPlaceholderHook(this).hook();
+	        PlaceholderAPI.registerPlaceholderHook("puffix", new PuffixPlaceholderHook(this));
             getLogger().log(Level.INFO, "PlaceholderAPI Hooked");
         } else {
             throw new RuntimeException("PlaceholderAPI not found!");
